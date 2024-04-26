@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Collective</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to bottom, #ff69b4, #ffe6f2);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+        }
+        
+        header {
+            background-color: #333;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #ccc;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+        
+        section {
+            background-color: #fff;
+            padding: 2em;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+       .artwork-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+       .artwork {
+            margin: 20px;
+            width: 300px;
+        }
+        
+       .artwork img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+       .artwork h2 {
+            margin-top: 10px;
+        }
+        
+       .artwork p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+        
+        #contact-form label {
+            margin-bottom: 10px;
+        }
+        
+        #contact-form input, #contact-form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+        }
+        
+        #contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        #contact-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        
+        footer {
+            background-color: #333;
+            padding: 1em;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Art Collective!</h1>
+            <p>Explore our vibrant community of artists and discover the beauty of creativity.</p>
+        </section>
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="artwork-container">
+                <div class="artwork">
+                    <img src="artwork1.jpg" alt="Artwork 1">
+                    <h2>Artwork 1: "Blooming Florals"</h2>
+                    <p>By: Emma Johnson</p>
+                    <p>Description: A vibrant mixed-media piece exploring the beauty of nature.</p>
+                </div>
+                <div class="artwork">
+                    <img src="artwork2.jpg" alt="Artwork 2">
+                    <h2>Artwork 2: "Urban Landscape"</h2>
+                    <p>By: Michael Lee</p>
+                    <p>Description: A stunning oil painting capturing the essence of city life.</p>
+                </div>
+                <!-- Add moreartworks here -->
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Get in Touch</h1>
+            <form id="contact-form">
+                <h2>Inquiry or Feedback</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Art Collective. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
